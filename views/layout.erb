@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Content Management System</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="<%= url('/cms.css') %>" type="text/css"/>
+  </head>
+  <body>
+    <% if session[:message] %>
+      <p class="message"><%= session.delete(:message) %></p>
+    <% end %>
+    <%= yield %>
+  </body>
+</html>

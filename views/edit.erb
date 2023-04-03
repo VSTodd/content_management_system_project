@@ -1,0 +1,5 @@
+<h2>Edit content of <%= @title %>:</h2>
+<form action="/<%= @title %>" method="post">
+  <div><textarea name="updated_text" rows="20" cols="100"><%= @text %></textarea></div>
+  <button type="submit">Save changes</button>
+</form>
